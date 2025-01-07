@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* cursor: url('/circlepointer2.png'),auto; */
+
 }
 
 body {
@@ -18,12 +20,32 @@ body {
   /* overflow: hidden; */
   background-color: black;
   border-color:3px solid #e6e6e6;
+  cursor: url('/circlepointer2.png'),auto;
+
   /*height: 100vh;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   color : #DADADB; */
+}
+
+.hello span {
+  opacity: 0;
+  display: inline-block; /* Ensures letters animate individually */
+  animation: fadeIn 1s ease 300ms;
+  /* margin-right: 0.8px; */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /* 
 #sketch {
@@ -64,6 +86,7 @@ li {
   z-index: 3;
   position: fixed;
   background-color: black;
+  /* cursor: pointer; */
 }
 .inside-nav{
   display: flex;
@@ -72,12 +95,28 @@ li {
   gap : 73px;
   justify-items: center;
   flex-wrap: nowrap;
-
+  cursor : pointer;
 
 }
+/* .inside-nav:hover{
+  color: #ffffff;
+  /* background-color: #828285; */
+  /* font-weight: 120; */
 
 .nav-container .logo {
   /* font-size: 1.5rem; */
+  font-weight: bold;
+}
+.nav-about :hover {
+  font-weight: bold;
+}
+.nav-skill :hover {
+  font-weight: bold;
+}
+.nav-project :hover {
+  font-weight: bold;
+}
+.nav-contact :hover {
   font-weight: bold;
 }
 
@@ -166,6 +205,8 @@ hr {
   text-align: center;
   margin: 1rem 0;
   width: 80%;
+  transition-delay: 200ms;
+  transition-property: all;
 }
 
 @media screen and (max-width: 768px) {
@@ -353,6 +394,7 @@ hr {
   padding: 2rem 0;
   border-top: 0.5px solid rgb(212, 211, 211);
 
+
   /* background-color: rgb(30, 30, 30) */
 
 }
@@ -370,6 +412,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  cursor:default;
 }
 /* .projects-grid:hover {
   border:2px solid white;
