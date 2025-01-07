@@ -1,7 +1,8 @@
 import Image from "next/image";
 const About =()=> {
     return(
-        <div className="about-container">
+        <section id="about">
+            <div className="about-container">
             <h2>About me</h2>
             <div className="flex-about">
                 <div className="about-text">
@@ -17,7 +18,8 @@ const About =()=> {
                     <Image src={null}/>
                 </div>
             </div>
-        </div>
+            </div>
+        </section>
     )
 }
 export default About;

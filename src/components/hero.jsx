@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Hero = () =>{
     return(
-        <div className="hero-container">
-            <Image src={'/pics1.jpg' } className = "profile-img" width={300} height={300} alt="Joe's personal headshot"/>
+        <div className="hero-container" >
+            <Image src={'/pics1.jpg' } style={{marginTop : '100px'}} className = "profile-img" width={300} height={300} alt="Joe's personal headshot"/>
             <div className="hero_text">
                 <h1>Hello! I'm Akshat</h1>
                 <p>I am a WebDeveloper based in Nepal</p>
