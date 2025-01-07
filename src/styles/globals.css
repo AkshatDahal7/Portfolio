@@ -98,6 +98,24 @@ li {
   cursor : pointer;
 
 }
+@media screen and (max-width: 768px){
+  .navbar {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+.nav-container .logo {
+  font-size: 1.5rem;
+}
+
+.inside-nav {
+  /* flex-direction: column;  */
+  gap: 10px; 
+  justify-content:flex-start;
+}
+
+}
 /* .inside-nav:hover{
   color: #ffffff;
   /* background-color: #828285; */
