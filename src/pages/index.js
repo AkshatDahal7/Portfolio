@@ -5,6 +5,7 @@ import About from "@/components/about";
 import Skill from "@/components/skill";
 import Project from "@/components/project";
 import Contact from "@/components/contact";
+import Lenis from "@/components/smoothScrolling";
 
 export default function Home() {
   useEffect(() => {
@@ -47,12 +48,14 @@ export default function Home() {
 
   return (
     <>
-      <div id="particles-js"></div>
-      <Hero />
-      <About />
-      <Skill />
-      <Project />
-      <Contact />
+     
+
+        <div id="particles-js"></div>
+        <Hero />
+        <About />
+        <Skill />
+        <Project />
+        <Contact />
     </>
   );
 }

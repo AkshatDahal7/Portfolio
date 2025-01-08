@@ -31,19 +31,37 @@ body {
   border-color:3px solid #e6e6e6;
   cursor: url('/circlepointer2.png'),auto;
   /* z-index: 3; */
-
-  /*height: 100vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color : #DADADB; */
+  
+  
 }
+@keyframes reveal{
+  0%{
+    transform: scale(0.7) translateX(200px);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes revealr{
+  0%{
+    transform: scale(0.7) translateX(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+}
+
+
 
 .hello span {
   opacity: 0;
   display: inline-block; /* Ensures letters animate individually */
   animation: fadeIn 1s ease 300ms;
+  animation-delay: 300ms;
   /* margin-right: 0.8px; */
 }
 
@@ -289,6 +307,14 @@ p{
   padding: 2rem 0;
   border-top: 0.5px solid rgb(212, 211, 211);
 
+
+
+
+  animation: revealr  ease-in-out;
+  /* animation-delay: 2s; */
+  animation-timeline: view();
+  animation-range: entry 0% entry 100%;
+
   /* background-color: rgb(30, 30, 30) */
 }
 
@@ -353,6 +379,13 @@ p{
 .skills-container {
   padding: 2rem 0;
   border-top: 0.5px solid rgb(212, 211, 211);
+
+
+
+
+  animation: reveal ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% entry 100%;
 
   /* background-color: rgb(30, 30, 30) */
 
@@ -440,6 +473,10 @@ p{
 
 
   /* background-color: rgb(30, 30, 30) */
+
+  animation: revealr ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% entry 100%;
 
 }
 
@@ -535,6 +572,9 @@ section{
   margin: 0 auto;
   border-top:0.5px solid rgb(212, 211, 211);
   border-bottom:0.5px solid rgb(212, 211, 211);
+  animation: reveal ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% entry 100%;
 
 }
 
