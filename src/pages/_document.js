@@ -12,6 +12,7 @@ export default function Document() {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        {/* <script src="particles.js"></script> */}
       </Head>
       <body>
         <Main />

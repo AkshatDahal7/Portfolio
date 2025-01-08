@@ -5,6 +5,15 @@
   /* cursor: url('/circlepointer2.png'),auto; */
 
 }
+#particles-js {
+  position: fixed; /* Ensures it stays in the background */
+  top: 75px;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  z-index:-1; 
+  pointer-events: none; 
+}
 
 body {
   font-family: sans-serif;
@@ -81,11 +90,11 @@ li {
   gap : 73px;
   align-items: center;
   flex-wrap: nowrap;
-
+  /* background-color: black; */
   padding: 1rem 0;
   z-index: 3;
   position: fixed;
-  background-color: black;
+  background-color:black;
   /* cursor: pointer; */
 }
 .inside-nav{
@@ -168,6 +177,12 @@ hr {
     width: 100%;
   }
 }
+h2{
+  cursor:text;
+}
+p{
+  cursor:text
+}
 
 .footer-container {
   display: flex;
@@ -175,11 +190,14 @@ hr {
   align-items: center;
   padding: 2rem 0;
   background-color: transparent;
+  /* cursor: pointer; */
 }
 
 .footer-container p {
   font-size: 0.8rem;
   color: #9B9C9D;
+  /* cursor: pointer;; */
+
 }
 
 .footer-container .social_icons {
@@ -187,16 +205,19 @@ hr {
   justify-content: space-between;
   align-items: center;
   gap: 0 1rem;
+  /* cursor: pointer; */
 }
 
 .footer-container .social_icons a {
   color: #9B9C9D;
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
+  /* cursor: pointer; */
 }
 
 .footer-container .social_icons a:hover {
   color: #DADADB;
+  /* cursor: pointer; */
 }
 
 /* Hero */
@@ -399,6 +420,10 @@ hr {
   background-color: #57de57;
   border: 1px solid white;
 
+}
+.skill-icon{
+  margin-top: 4px;
+  size: 2px;
 }
 
 .skills-container .grid-skills .python:hover {

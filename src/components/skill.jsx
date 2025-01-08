@@ -6,7 +6,9 @@ const Skill= () =>{
                     <h2>Skills</h2>
                     <div className="grid-skills">
                 <div className="skill-card html">
-                <i className="fa-brands fa-html5 html-icon"></i>
+                <a href="./c-iconfinal.png" target="_blank" rel="noopener noreferrer">
+                <img src="./c-iconfinal.png" alt="C Language" className="skill-icon" />
+                </a>      
                 <p>C</p>
                 </div>
                 <div className="skill-card css">

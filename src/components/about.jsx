@@ -14,9 +14,9 @@ const About =()=> {
                     experience, and ensure the highest level of code quality.
                     </p>
                 </div>
-                <div className="about-img">
+                {/* <div className="about-img">
                     <Image src={null}/>
-                </div>
+                </div> */}
             </div>
             </div>
         </section>
