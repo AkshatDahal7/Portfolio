@@ -6,7 +6,7 @@
 
 }
 #particles-js {
-  position: fixed; /* Ensures it stays in the background */
+  position: fixed; 
   top: 75px;
   left: 0;
   width: 100vw; 
@@ -30,6 +30,7 @@ body {
   background-color: black;
   border-color:3px solid #e6e6e6;
   cursor: url('/circlepointer2.png'),auto;
+  /* z-index: 3; */
 
   /*height: 100vh;
   margin: 0;
