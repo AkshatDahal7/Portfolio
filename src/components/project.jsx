@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { projectData } from "./data";
 
 const Project = () =>{
@@ -14,7 +15,9 @@ const Project = () =>{
                         <a href={project.gitHubLink}><i className="fa-brands fa-github"></i></a>
                     </div>
                     </div>
+                    <Link href={`/projects/${project.name}`}>
                     <h3>{project.title}</h3>
+                    </Link>
                     <p>{project.description}</p>
                 </div>
                 ))
