@@ -28,10 +28,12 @@ const form = () =>{
           .then((response) => {
             console.log("Email sent successfully:", response);
             setFormData({ user_name: "", user_email: "", message: "" });
+            alert("Sent successfully");
           })
           .catch((error) => {
             console.error("Error sending email:", error);
           });
+          
       };
     return(
         <div className="form-whole">
